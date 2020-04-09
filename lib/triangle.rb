@@ -1,5 +1,6 @@
 require 'pry'
 class Triangle
+  
   def initialize(side_1, side_2, side_3)
     @triangle_sides = []
     @triangle_sides << side_1
@@ -36,5 +37,9 @@ class Triangle
 end
 
 class TriangleError < StandardError
-
+  
+  def message
+    "This is not a valid triangle."
+  end
+  
 end
