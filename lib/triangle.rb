@@ -1,7 +1,6 @@
 require 'pry'
 
 class Triangle
-  # s1, s2, s3 are lengths of the 3 sides
   attr_accessor :s1, :s2, :s3
 
   def initialize(s1, s2, s3)
@@ -34,7 +33,7 @@ class Triangle
     elsif s1 == s2 || s2 == s3 || s1 == s3
       :isosceles
     end
-  end # kind method
+  end 
 
   class TriangleError < StandardError
     def message
@@ -42,4 +41,4 @@ class Triangle
     end
   end
 
-end # class Triangle end
+end
